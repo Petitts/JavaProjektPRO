@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javaprojektpro.MainController">
+   <children>
+      <Text layoutX="252.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Slide Viewer">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <Button layoutX="14.0" layoutY="362.0" mnemonicParsing="false" text="To main window" onAction="#handleBackToMainWindow"/>
+   </children>
+</AnchorPane>

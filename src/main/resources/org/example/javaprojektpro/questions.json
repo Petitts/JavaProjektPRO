@@ -1,0 +1,102 @@
+[
+  {
+    "questionText": "Co to jest Java Virtual Machine (JVM)?",
+    "correctAnswer": [1, 2],
+    "options": ["Jest to maszyna do prania", "Jest to maszyna wirtualna dla języka Java", "Jest to maszyna do pisania kodu Java", "Jest to maszyna do kawy"]
+  },
+  {
+    "questionText": "Które z poniższych słów kluczowych jest używane do definiowania interfejsu w Javie?",
+    "correctAnswer": [0],
+    "options": ["interface", "class", "void", "implements"]
+  },
+  {
+    "questionText": "Co to jest polimorfizm w kontekście języka Java?",
+    "correctAnswer": [1],
+    "options": ["To rodzaj kawy", "To zdolność obiektu do przyjmowania wielu form", "To specjalny typ zmiennej", "To nazwa jednego z typów danych"]
+  },
+  {
+    "questionText": "Który pakiet jest używany do obsługi wejścia/wyjścia w Javie?",
+    "correctAnswer": [2, 3],
+    "options": ["java.util", "java.lang", "java.io", "java.io.stream"]
+  },
+  {
+    "questionText": "Co to jest konstruktor w Javie?",
+    "correctAnswer": [2],
+    "options": ["Specjalna metoda do usuwania obiektów", "Specjalna metoda do edycji kodu", "Specjalna metoda do inicjalizacji obiektu", "Specjalna metoda do kompilacji kodu"]
+  },
+  {
+    "questionText": "Jaka jest różnica między klasą a interfejsem w Javie?",
+    "correctAnswer": [0, 1],
+    "options": ["Klasa może mieć implementację, interfejs nie", "Interfejs może mieć implementację, klasa nie", "Klasa i interfejs są tożsame", "Nie ma różnicy"]
+  },
+  {
+    "questionText": "Jakie są rodzaje zmiennych w Javie?",
+    "correctAnswer": [0, 1],
+    "options": ["Lokalne i globalne", "Pola i zmienne lokalne", "Publiczne i prywatne", "Stałe i zmienne"]
+  },
+  {
+    "questionText": "Co to jest Garbage Collection w Javie?",
+    "correctAnswer": [2],
+    "options": ["Proces usuwania kodu źródłowego", "Proces sortowania kodu", "Automatyczne zarządzanie pamięcią przez usuwanie nieużywanych obiektów", "Proces oczyszczania ekranu"]
+  },
+  {
+    "questionText": "Co to są wyjątki w Javie?",
+    "correctAnswer": [0, 1],
+    "options": ["Błędy w czasie wykonania", "Specjalne sytuacje wymagające specjalnego traktowania", "Słowa kluczowe w języku Java", "Typy danych"]
+  },
+  {
+    "questionText": "Jaka jest rola słowa kluczowego 'super' w Javie?",
+    "correctAnswer": [1],
+    "options": ["Oznacza, że metoda jest statyczna", "Odnosi się do klasy nadrzędnej lub interfejsu", "Zmienia zasięg widoczności zmiennej", "Definiuje nowy obiekt"]
+  },
+  {
+    "questionText": "Co oznacza słowo kluczowe 'final' w deklaracji zmiennej?",
+    "correctAnswer": [3],
+    "options": ["Zmienna może być zmieniana", "Zmienna jest statyczna", "Zmienna jest dynamiczna", "Zmienna jest stała i nie może być zmieniana"]
+  },
+  {
+    "questionText": "Jaki jest cel stosowania operatora 'this' w Javie?",
+    "correctAnswer": [0],
+    "options": ["Odnosi się do aktualnego obiektu", "Odnosi się do klasy nadrzędnej", "Definiuje nową klasę", "Oznacza zmienną jako globalną"]
+  },
+  {
+    "questionText": "Co to jest serializacja w Javie?",
+    "correctAnswer": [2],
+    "options": ["Proces optymalizacji kodu", "Proces sortowania danych", "Proces konwersji obiektu na strumień bajtów", "Proces oznaczania obiektu jako stałego"]
+  },
+  {
+    "questionText": "Które z poniższych są kolekcjami w Javie?",
+    "correctAnswer": [0, 1],
+    "options": ["ArrayList", "String", "int", "LinkedList"]
+  },
+  {
+    "questionText": "Jaki jest cel stosowania słowa kluczowego 'static' w deklaracji metody?",
+    "correctAnswer": [0],
+    "options": ["Oznacza, że metoda należy do klasy, a nie do instancji", "Oznacza, że metoda może być tylko wywoływana raz", "Oznacza, że metoda nie ma dostępu do pól klasy", "Oznacza, że metoda jest prywatna"]
+  },
+  {
+    "questionText": "Co to jest wzorzec projektowy Singleton w Javie?",
+    "correctAnswer": [0],
+    "options": ["Zapewnia, że istnieje tylko jedna instancja danej klasy", "Oznacza, że klasa jest statyczna", "Definiuje interfejs", "Oznacza, że klasa jest abstrakcyjna"]
+  },
+  {
+    "questionText": "Co to jest lambda-wyrażenie w Javie?",
+    "correctAnswer": [2],
+    "options": ["Specjalna metoda do obsługi błędów", "Nazwa jednego z typów danych", "Krótka, anonimowa funkcja", "Specjalna kategoria zmiennych"]
+  },
+  {
+    "questionText": "Który pakiet jest używany do obsługi operacji matematycznych w Javie?",
+    "correctAnswer": [1],
+    "options": ["java.util", "java.lang.Math", "java.math", "java.mathematics"]
+  },
+  {
+    "questionText": "Co to jest operator 'instanceof' w Javie?",
+    "correctAnswer": [0],
+    "options": ["Sprawdza, czy obiekt jest instancją określonej klasy", "Definiuje nową instancję klasy", "Oznacza, że klasa jest instancją interfejsu", "Oznacza, że klasa jest abstrakcyjna"]
+  },
+  {
+    "questionText": "Jakie są różnice między interfejsem a klasą abstrakcyjną w Javie?",
+    "correctAnswer": [0, 1],
+    "options": ["Interfejs może zawierać jedynie deklaracje metod, klasa abstrakcyjna może zawierać implementacje", "Klasa abstrakcyjna może mieć pola, interfejs nie", "Interfejs może być finalny, klasa abstrakcyjna nie", "Klasa abstrakcyjna jest bardziej elastyczna niż interfejs"]
+  }
+]

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javaprojektpro.MainController">
+    <children>
+        <Group layoutX="126.0" layoutY="148.0" />
+        <Button layoutX="95.0" layoutY="135.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="169.0" text="Silde Viewer" onAction="#handleSlideViewer"/>
+        <Button layoutX="340.0" layoutY="136.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="169.0" text="Quiz" onAction="#handleQuiz"/>
+        <Button layoutX="94.0" layoutY="258.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="169.0" text="Code Viewer" onAction="#handleCodeViewer"/>
+        <Button layoutX="340.0" layoutY="258.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="169.0" text="Questionare" onAction="#handleQuestionare"/>
+        <Text layoutX="220.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Java PRO">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

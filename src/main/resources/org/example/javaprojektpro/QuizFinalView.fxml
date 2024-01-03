@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javaprojektpro.QuizFinalController">
+    <children>
+        <Button onAction="#handleBackToMenu" layoutX="247.0" layoutY="271.0" mnemonicParsing="false" text="Wróć do menu" />
+        <Text layoutX="207.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gratulacje">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Text>
+        <Text layoutX="257.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Twój wynik to:" />
+        <Label fx:id="scoreLabel" layoutX="282.0" layoutY="151.0" text="Label" />
+    </children>
+</AnchorPane>
