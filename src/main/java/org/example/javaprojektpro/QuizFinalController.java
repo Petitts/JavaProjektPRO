@@ -30,5 +30,6 @@ public class QuizFinalController implements Initializable {
         finalModel = new QuizFinalModel();
         finalModel.setScore(QuizQuestionModel.score);
         setScoreLabel();
+        QuizQuestionModel.score = 0;
     }
 }

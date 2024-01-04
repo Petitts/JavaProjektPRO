@@ -1,5 +1,7 @@
 package org.example.javaprojektpro;
 
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -8,6 +10,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -16,7 +19,13 @@ import java.util.ResourceBundle;
 
 public class QuizQuestionController implements Initializable {
     private QuizQuestionModel questionModel;
+    private Timeline timeLine;
     private int currentQuestionIndex;
+    private long stopwatchStart;
+    private long stopwatchStop;
+    private boolean stopwatchRunning;
+    @FXML
+    private Label elapsedTimeLabel;
     @FXML
     private Label scoreLabel;
     @FXML
@@ -56,6 +65,7 @@ public class QuizQuestionController implements Initializable {
         if(currentQuestionIndex < questionModel.getQuestions().size()){
             displayCurrentQuestion();
         } else {
+            stopStopwatch();
             openQuizFinalView();
         }
     }
@@ -95,10 +105,44 @@ public class QuizQuestionController implements Initializable {
             e.printStackTrace();
         }
     }
+    private void startStopwatch(){
+        if (!stopwatchRunning){
+            stopwatchStart = System.currentTimeMillis();
+            stopwatchRunning = true;
+
+            // Update Timeline every second
+            timeLine = new Timeline(new KeyFrame(Duration.millis(1), event -> displayElapsedTime()));
+            timeLine.setCycleCount(Timeline.INDEFINITE);
+            timeLine.play();
+        }
+    }
+    private void stopStopwatch(){
+        if(stopwatchRunning){
+            stopwatchRunning = false;
+            if(timeLine != null){
+                timeLine.stop();
+            }
+        }
+    }
+    private long getElapsedTime(){
+        return System.currentTimeMillis() - stopwatchStart;
+    }
+    private void displayElapsedTime(){
+        long elapsedTime = getElapsedTime();
+        long miliseconds = elapsedTime % 1000;
+        long minutes = elapsedTime / (1000 * 60);
+        long seconds = (elapsedTime % (1000 * 60)) / 1000;
+        elapsedTimeLabel.setText(Long.toString(minutes)+"."+Long.toString(seconds)+"."+Long.toString(miliseconds));
+        if (minutes >= 2){
+            stopStopwatch();
+            openQuizFinalView();
+        }
+    }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         questionModel = new QuizQuestionModel();
         currentQuestionIndex = 0;
         displayCurrentQuestion();
+        startStopwatch();
     }
 }
