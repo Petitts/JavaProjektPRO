@@ -8,13 +8,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-
 public class MainController {
     public static int otherWindowOpen = 0;
     @FXML
     private void handleSlideViewer(ActionEvent event){
-        openNewScene("SlideViewerView.fxml");
+        openNewScene("SlideViewerSubjectView.fxml");
         otherWindowOpen += 1;
     }
     @FXML
