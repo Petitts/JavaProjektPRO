@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javaprojektpro.SlideViewerLectureController">
+   <children>
+      <VBox fx:id="buttonContainer" layoutX="86.0" layoutY="74.0" prefHeight="293.0" prefWidth="449.0" AnchorPane.bottomAnchor="33.0">
+         <padding>
+            <Insets bottom="10.0" />
+         </padding></VBox>
+      <Label fx:id="subjectLabel" layoutX="254.0" layoutY="38.0" text="Subject Name" />
+      <Button fx:id="backToSubjectButton" layoutX="14.0" layoutY="367.0" mnemonicParsing="false" onAction="#handleBackToSubjectButton" text="Powrót" />
+   </children>
+</AnchorPane>
