@@ -9,6 +9,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -38,8 +40,11 @@ public class QuizQuestionController implements Initializable {
     private CheckBox option3;
     @FXML
     private CheckBox option4;
+    @FXML
+    private ImageView imageField;
    
     private void displayCurrentQuestion(){
+        imageField.setImage(null);
         QuizQestion currentQestion = questionModel.getQuestions().get(currentQuestionIndex);
         questionLabel.setText(currentQestion.getQuestionText());
         scoreLabel.setText(Integer.toString(questionModel.score));
@@ -52,6 +57,7 @@ public class QuizQuestionController implements Initializable {
         option2.setSelected(false);
         option3.setSelected(false);
         option4.setSelected(false);
+        displayImage();
     }
     @FXML
     private void handleNextQuestionButton(){
@@ -138,6 +144,15 @@ public class QuizQuestionController implements Initializable {
             openQuizFinalView();
         }
     }
+    private void displayImage(){
+        QuizQestion currentQuestion = questionModel.getQuestions().get(currentQuestionIndex);
+        if(currentQuestion.imageURL != null){
+            String imageURL = currentQuestion.imageURL;
+            Image image = new Image(imageURL);
+            imageField.setImage(image);
+        }
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         questionModel = new QuizQuestionModel();

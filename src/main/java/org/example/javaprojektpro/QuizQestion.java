@@ -3,16 +3,20 @@ package org.example.javaprojektpro;
 import java.util.List;
 
 public class QuizQestion {
+    public String id;
     public String questionText;
-    public List<Integer> correctAnswer;
+    public List<Integer> correctAnswers;
     public List<String> options;
+    public String imageURL;
     public QuizQestion(){
         this.questionText="";
     }
-    public QuizQestion(String questionText, List<String> options,List<Integer> correctAnswer){
+    public QuizQestion(String id, String questionText, List<String> options,List<Integer> correctAnswer, String imageURL){
+        this.id = id;
         this.questionText = questionText;
         this.options = options;
-        this.correctAnswer = correctAnswer;
+        this.correctAnswers = correctAnswer;
+        this.imageURL = imageURL;
     }
     public String getQuestionText(){
         return questionText;
@@ -21,6 +25,7 @@ public class QuizQestion {
         return options;
     }
     public List<Integer> getCorrectAnswer(){
-        return correctAnswer;
+        return correctAnswers;
     }
+    public  String getImageURL(){return imageURL;}
 }

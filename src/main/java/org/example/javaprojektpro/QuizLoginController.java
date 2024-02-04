@@ -27,8 +27,8 @@ public class QuizLoginController {
     }
     @FXML
     public void Login(ActionEvent event) throws Exception{
-        loginModel = new QuizLoginModel("okon");
-        if(loginModel.isPasswordCorrect(txtPassword.getText())){
+        loginModel = new QuizLoginModel("javaproapp", txtPassword.getText());
+        if(loginModel.isPasswordCorrect()){
             openQuestionView();
         } else {
             status.setText("Nieudane logowanie");
