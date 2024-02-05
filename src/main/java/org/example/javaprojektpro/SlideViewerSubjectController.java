@@ -9,24 +9,30 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class SlideViewerSubjectController {
+
     @FXML
     private void handleJavaButton(ActionEvent event){
-        openNewScene("Java", "Podstawy Java Se", "Java AWT Swing", "Java AWT Swing Obsługa Zdarzeń", "Java FX", "Java Android OS", "JEE Platform", "Java Spring Framework", "Java Przetwarzanie Danych");
+        openNewScene("Java", "Podstawy Java Se", "AWT Swing", "AWT Swing Obsługa Zdarzeń", "Java FX", "Android OS", "JEE Platform", "Spring Framework", "Przetwarzanie Danych");
         MainController.otherWindowOpen += 1;
+        SlideViewerSlideModel.subjectName="java";
     }
     @FXML
     private void handleWEBButton(ActionEvent event){
-        openNewScene("Interakcja Człowiek Komputer", "ICK Techniki Pozyskiwania danych", "ICK Interfesjy Wizyjne", "ICK Narzędzia Dla Wizji", "ICK Mowa", "ICK Design 4 All");
+        openNewScene("Interakcja Człowiek Komputer", "Techniki Pozyskiwania danych", "Interfesjy Wizyjne", "Narzędzia Dla Wizji", "Mowa", "Design 4 All");
+        MainController.otherWindowOpen += 1;
+        SlideViewerSlideModel.subjectName="ICK";
     }
     @FXML
     private void handleCppButton(ActionEvent event){
-        openNewScene("C++","Cpp Wprowadzenie", "Cpp Klasy", "Cpp Konstruktor", "Cpp Konstruktor Kopiujacy", "Cpp Hermetyzacja", "Cpp Alokacja Pamieci", "Cpp Przeładowanie Funkcji", "Cpp Przeładowanie Operatorów", "Cpp Strumienie");
+        openNewScene("C++","Wprowadzenie", "Klasy", "Konstruktor", "Konstruktor Kopiujacy", "Hermetyzacja", "Alokacja Pamieci", "Cpp Przeładowanie Funkcji", "Cpp Przeładowanie Operatorów", "Cpp Strumienie");
         MainController.otherWindowOpen += 1;
+        SlideViewerSlideModel.subjectName="cpp";
     }
     @FXML
     private void handleSoButton(ActionEvent event){
         openNewScene("Systemy Operacyjne","Procesy i watki", "Zarządzanie pamięcią");
         MainController.otherWindowOpen += 1;
+        SlideViewerSlideModel.subjectName = "SO";
     }
     @FXML
     private void handleBackToMainWindow(ActionEvent event){

@@ -10,39 +10,40 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.stage.Stage;
 
-public class QuizLoginController {
-    private QuizLoginModel loginModel;
-
+public class SlideLoginController {
+    private SlideLoginModel loginModel;
     @FXML
     private Label status;
     @FXML
     private PasswordField txtPassword;
 
     @FXML
-    private void handleBackToMainWindow(ActionEvent event){
+    private void handleBackToLectureWindow(ActionEvent event){
         Node source = (Node) event.getSource();
         Stage stage = (Stage) source.getScene().getWindow();
         stage.close();
         MainController.otherWindowOpen -= 1;
     }
-    @FXML
-    public void Login(ActionEvent event) throws Exception{
-        loginModel = new QuizLoginModel("javaproappquiz", txtPassword.getText());
+    @FXML void Login(ActionEvent event) throws Exception{
+        loginModel = new SlideLoginModel("javaproappslide", txtPassword.getText());
         if(loginModel.isPasswordCorrect()){
-            openQuestionView();
+            SlideViewerSlideModel.logged = true;
+            openSlideView();
         } else {
             status.setText("Nieudane logowanie");
         }
     }
-    private void openQuestionView(){
+    private void openSlideView(){
         try{
             Stage currentStage = (Stage) txtPassword.getScene().getWindow();
             FXMLLoader loader;
-            loader = new FXMLLoader(getClass().getResource("QuizQestionView.fxml"));
+            loader = new FXMLLoader(getClass().getResource("SlideViewerSlideView.fxml"));
             Parent root = loader.load();
 
+            SlideViewerSlideController controller = loader.getController();
+            controller.initialize(SlideViewerSlideModel.lectureName);
+
             Stage stage = new Stage();
-            stage.setTitle("New Scene");
             stage.setScene(new Scene(root));
 
             stage.show();
@@ -50,7 +51,7 @@ public class QuizLoginController {
             stage.setOnCloseRequest(closeEvent -> {
                 MainController.otherWindowOpen -= 1;
             });
-        } catch (Exception e){
+        }catch (Exception e){
             e.printStackTrace();
         }
     }
