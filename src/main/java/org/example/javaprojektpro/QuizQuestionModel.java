@@ -35,6 +35,7 @@ public class QuizQuestionModel {
                 questions.add(question);
             }
             connection.disconnect();
+
         }
         catch (IOException ex) {
             ex.printStackTrace();

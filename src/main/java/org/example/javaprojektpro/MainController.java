@@ -27,7 +27,7 @@ public class MainController {
     }
     @FXML
     private void handleQuestionare(ActionEvent event){
-        openNewScene("QuestionareView.fxml");
+        openNewScene("JavaToolsView.fxml");
         otherWindowOpen += 1;
     }
     @FXML

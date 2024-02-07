@@ -12,8 +12,9 @@
          </font>
       </Text>
       <Button layoutX="14.0" layoutY="362.0" mnemonicParsing="false" onAction="#handleBackToMainWindow" text="To main window" />
-      <TreeView fx:id="treeView" layoutX="14.0" layoutY="26.0" onContextMenuRequested="#selectItem" onMouseClicked="#selectItem" prefHeight="323.0" prefWidth="200.0" />
+      <TreeView fx:id="treeView" layoutX="14.0" layoutY="26.0" onMouseClicked="#selectItem" prefHeight="323.0" prefWidth="200.0" />
       <TextArea fx:id="textArea" layoutX="234.0" layoutY="26.0" prefHeight="323.0" prefWidth="354.0" />
+      <Button fx:id="saveButton" layoutX="520.0" layoutY="362.0" mnemonicParsing="false" onAction="#saveFile" text="Save File" />
 
    </children>
 </AnchorPane>

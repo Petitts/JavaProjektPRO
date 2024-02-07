@@ -7,15 +7,17 @@ public class Code {
     public String exercise;
     public String title;
     public String content;
+    public String type;
 
     public Code(){this.content="";}
 
-    public Code(String language, String laboratory, String exercise, String title, String content) {
+    public Code(String language, String laboratory, String exercise, String title, String content, String type) {
         this.language = language;
         this.laboratory = laboratory;
         this.exercise = exercise;
         this.title = title;
         this.content = content;
+        this.type = type;
     }
 
     public String getId() {

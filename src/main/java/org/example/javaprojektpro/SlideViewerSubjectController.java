@@ -18,13 +18,13 @@ public class SlideViewerSubjectController {
     }
     @FXML
     private void handleWEBButton(ActionEvent event){
-        openNewScene("Interakcja Człowiek Komputer", "Techniki Pozyskiwania danych", "Interfesjy Wizyjne", "Narzędzia Dla Wizji", "Mowa", "Design 4 All");
+        openNewScene("Interakcja Człowiek Komputer", "Techniki Pozyskiwania danych", "Interfejsy Wizyjne", "Narzędzia Dla Wizji", "Mowa", "Design 4 All");
         MainController.otherWindowOpen += 1;
         SlideViewerSlideModel.subjectName="ICK";
     }
     @FXML
     private void handleCppButton(ActionEvent event){
-        openNewScene("C++","Wprowadzenie", "Klasy", "Konstruktor", "Konstruktor Kopiujacy", "Hermetyzacja", "Alokacja Pamieci", "Cpp Przeładowanie Funkcji", "Cpp Przeładowanie Operatorów", "Cpp Strumienie");
+        openNewScene("C++","Wprowadzenie", "Klasy", "Konstruktor", "Konstruktor Kopiujacy", "Hermetyzacja", "Alokacja Pamieci", "Przeładowanie Funkcji", "Przeładowanie Operatorów", "Strumienie");
         MainController.otherWindowOpen += 1;
         SlideViewerSlideModel.subjectName="cpp";
     }

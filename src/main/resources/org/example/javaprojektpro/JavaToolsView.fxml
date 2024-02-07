@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane prefHeight="817.0" prefWidth="941.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javaprojektpro.JavaToolsController">
+    <children>
+        <Text layoutX="355.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Java Tools" wrappingWidth="231.3671875">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Text>
+        <Button layoutX="18.0" layoutY="774.0" mnemonicParsing="false" onAction="#handleBackToMainWindow" text="To main window" />
+      <TreeView fx:id="treeView" layoutX="18.0" layoutY="79.0" onMouseClicked="#selectItem" prefHeight="691.0" prefWidth="200.0" />
+      <WebView fx:id="webView" layoutX="224.0" layoutY="79.0" prefHeight="720.0" prefWidth="699.0" />
+    </children>
+</AnchorPane>
